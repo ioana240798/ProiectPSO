@@ -71,11 +71,11 @@ Serverul va avea un socket TCP care:
 
 Serverul continuă să asculte orice mesaj primit, apoi trebuie să analizăm care sunt informațiile utile din mesaj, parsându-l. Informațiile utile la care ne pasă sunt numele fișierului (cu calea) și extensia fișierului. Serverul deschide apoi fișierul conform căii și pune conținutul fișierului într-un mesaj de răspuns pe care îl vom trimite ulterior clientului. Înainte de a trimite mesajul de răspuns, ar trebui mai întâi să spunem clientului ce tip de conținut de fișier vom trimite, poate fișier imagine (.jpg, .png, ...) sau fișier txt (.html, .doc, . ..) și așa mai departe.
 
-##Bibliografie
+## Bibliografie
 
-https://trungams.github.io/2020-08-23-a-simple-http-server-from-scratch/
-https://osasazamegbe.medium.com/showing-building-an-http-server-from-scratch-in-c-2da7c0db6cb7
-https://github.com/OsasAzamegbe/http-server
+* https://trungams.github.io/2020-08-23-a-simple-http-server-from-scratch/
+* https://osasazamegbe.medium.com/showing-building-an-http-server-from-scratch-in-c-2da7c0db6cb7
+* https://github.com/OsasAzamegbe/http-server
 
 
 
