@@ -1,7 +1,7 @@
 # ProiectPSO
 
 
-## Introducere si cerinte de sistem
+## Introducere 
 
 În lumea internetului, există întotdeauna un server care poate deservi mai mulți clienți. De exemplu, Google, Netflix, Facebook și așa mai departe sunt servere. Oamenii ca noi sunt clienti și acestia pot folosi browsere web (Chrome, Edge, Opera, Firefox, etc.) pentru a comunica cu serverele.
 
