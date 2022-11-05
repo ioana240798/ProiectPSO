@@ -85,9 +85,11 @@ Pe de altă parte, dacă un server web nu primește un răspuns în timp util de
 
 
 Acest proiect arată una dintre modalitățile majore în care sunt implementate serverele HTTP, si anume, folosește un **socket TCP** pentru a asculta cererile primite și trimite înapoi un răspuns HTTP de bază bazat pe standardele stabilite de documentele RFC.
-Serverul continuă să asculte orice mesaj primit, apoi trebuie să analizăm care sunt informațiile utile din mesaj, parsându-l. Informațiile utile la care ne pasă sunt numele fișierului (cu calea) și extensia fișierului. Serverul deschide apoi fișierul conform căii și pune conținutul fișierului într-un mesaj de răspuns pe care îl vom trimite ulterior clientului. Înainte de a trimite mesajul de răspuns, ar trebui mai întâi să spunem clientului ce tip de conținut de fișier vom trimite, poate fișier imagine (.jpg, .png, ...) sau fișier txt (.html, .doc, . ..) și așa mai departe.
 
-Mediul de dezvoltare al aplicatiei este Visual Studio. Serverele web urmează un model client-server. În această structură, un program, cunoscut și sub numele de client, solicită o resursă sau serviciu de la un alt program, server.
+**Serverul** continuă să asculte orice mesaj primit, apoi trebuie să analizăm care sunt informațiile utile din mesaj, parsându-l. Informațiile utile la care ne pasă sunt numele fișierului (cu calea) și extensia fișierului. **Serverul** deschide apoi fișierul conform căii și pune conținutul fișierului într-un mesaj de răspuns pe care îl vom trimite ulterior **clientului**. Înainte de a trimite mesajul de răspuns, ar trebui mai întâi să spunem **clientului** ce tip de conținut de fișier vom trimite, poate fișier imagine (.jpg, .png, ...) sau fișier txt (.html, .doc, . ..) și așa mai departe.
+<br />
+
+Mediul de dezvoltare al aplicatiei este **Visual Studio**. Serverele web urmează un model client-server. În această structură, un program, cunoscut și sub numele de client, solicită o resursă sau serviciu de la un alt program, server.
 
 Pentru a comunica între software-ul de rețea Windows și serviciile de rețea, voi folosi fisierul header: #include <WS2tcpip.h>. Fișierul antet **Ws2tcpip.h** conține definiții introduse în documentul WinSock 2 Protocol-Specific pentru TCP/IP, care include funcții și structuri mai noi utilizate pentru a prelua adrese IP. (Winsock permite programelor și aplicațiilor Windows să se conecteze la internet prin TCP/IP).
 
