@@ -150,11 +150,57 @@ TCPListen(const char* ipAddress, int port) :
 
 
 
+- **functia run():**
+
+  - se va crea o copie a setului de file descriptori ai fisierului principal. Copia contine socket-urile care accepta cereri de conexiune de intrare sau mesaje. De exemplu, avem un server si setul de descriptori al fisierului principal, care contine 5 item-uri: socket-ul de ascultare si patru clienti. Cand se ajunge in select(), sunt returnate doar socket-urile care interactioneaza cu serverul.  
+  
+  <br />
+
+  ```c++
+  	bool running = true;
+	
+	while (running)
+	{
+
+		fd_set copie = filedescriptorul;
+
+		int socketCount = select(0, &copie, nullptr, nullptr, nullptr);
+
+		for (int i = 0; i < socketCount; i++)
+		{
+			SOCKET sock = copie.fd_array[i];
+
+			if (sock == socketul)
+			{
+
+				SOCKET client = accept(socketul, nullptr, nullptr);
+				FD_SET(client, &filedescriptorul);
+				onClientConnected(client);
+			}
+			else 
+			{
+				char buf[4096];
+				ZeroMemory(buf, 4096);
 
 
+				int bytesIn = recv(sock, buf, 4096, 0);
+				if (bytesIn <= 0)
+				{
+					onClientDisconnected(sock);
+					closesocket(sock);
+					FD_CLR(sock, &filedescriptorul);
+				}
+				else
+				{
+					onMessageReceived(sock, buf, bytesIn);
+				}
+			}
+		}
+	}
+  ```
 
 
-
+<br />
 
 
 
