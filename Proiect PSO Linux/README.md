@@ -26,7 +26,7 @@ Parametrul length reprezintă lungimea structurii de date address, făra acest p
 
 <br />
 Apelul sistem connect cere nucleului să facă o conexiune cu un socket existent
-
+<br />
 ```c
 connect(sd, address, length)
 ```
