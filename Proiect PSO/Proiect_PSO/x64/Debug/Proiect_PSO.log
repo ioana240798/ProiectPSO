@@ -1,3 +1,0 @@
-﻿  WebServer.cpp
-C:\Users\Ioana\Desktop\Proiect PSO da\Proiect_PSO\WebServer.cpp(62,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Proiect_PSO.vcxproj -> C:\Users\Ioana\Desktop\Proiect PSO da\x64\Debug\Proiect_PSO.exe
