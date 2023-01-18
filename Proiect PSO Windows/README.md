@@ -17,7 +17,7 @@ Un server web acceptă și îndeplinește solicitările clienților pentru conț
 
 <br />
 
-![My Image](imagine2.png)
+![My Image](../imagine2.png)
 
 <br />
 
@@ -46,7 +46,7 @@ B. **Server**: va conține toate datele și un software care acționează ca un 
 
 <br />
 
-![My Image](imagine1.png)
+![My Image](../imagine1.png)
 
 <br />
 
