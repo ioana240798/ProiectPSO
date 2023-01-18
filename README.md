@@ -1,5 +1,6 @@
 # ProiectPSO
 
+# Mai multe detalii in PDF
 
 ## Introducere 
 
