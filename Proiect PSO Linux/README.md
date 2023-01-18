@@ -5,7 +5,7 @@
 
 <br />
 Mecanismul de comunicare prin socket-uri conține câteva apeluri sistem. Apelul sistem socket stabilește punctul final al unei legături de comunicație.
-
+<br />
 ```c
 sd = socket(format, type, protocol)
 ```
