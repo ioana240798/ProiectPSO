@@ -6,6 +6,7 @@
 <br />
 Mecanismul de comunicare prin socket-uri conține câteva apeluri sistem. Apelul sistem socket stabilește punctul final al unei legături de comunicație.
 <br />
+
 ```c
 sd = socket(format, type, protocol)
 ```
@@ -27,6 +28,7 @@ Parametrul length reprezintă lungimea structurii de date address, făra acest p
 <br />
 Apelul sistem connect cere nucleului să facă o conexiune cu un socket existent
 <br />
+
 
 ```c
 connect(sd, address, length)
