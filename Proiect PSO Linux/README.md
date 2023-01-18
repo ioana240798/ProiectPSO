@@ -24,9 +24,11 @@ Parametrul length reprezintă lungimea structurii de date address, făra acest p
 
 <br />
 Apelul sistem connect cere nucleului să facă o conexiune cu un socket existent
+
 ```c
 connect(sd, address, length)
 ```
+
 unde semnificația parametrilor este aceeași ca la apelul bind, cu deosebirea că parametrul address reprezintă adresa socket-ului destinație care va constitui celalalt capat al liniei de comunicație. Ambele socket-uri trebuie să folosească același domeniu și protocol de comunicație, rămânând în sarcina nucleului inițializarea corectă a legăturilor de comunicație.
 Dacă tipul socket-ului este datagrama, atunci apelul connect informează nucleul asupra adresei de utilizat în cadrul apelurilor send ulterioare prin socket-ul respectiv în momentul apelului nu se realizează nici o legatură.
 
